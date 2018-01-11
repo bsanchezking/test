@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/bsanchezking/test/issues"
   },
-  "homepage": "https://github.com/bsanchezking/test#readme"
+  "homepage": "https://github.com/bsanchezking/test#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
 }

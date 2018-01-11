@@ -1,10 +1,8 @@
-var http = require('http');
+const express = require('express')
+const app = express()
 
-var server = http.createServer( function (req,res ) {
-	res.writeHead(200, {"Content-Type": "text/plain"});
-	res.end("Hello World");
-});
+app.get ('/prueba', (req, res) => res.send('welcome to prueba') )
 
-server.listen(3000);
+app.get('/', (req, res ) => res.send('hello world \n <a href="/prueba">ir a prueba</a>') )
 
-console.log("server running at 192.168.0.37:3000");
+app.listen(3000, () => console.log("running") )
